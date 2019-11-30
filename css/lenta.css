@@ -1,0 +1,27 @@
+div {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    float: left;
+    }
+
+div:nth-of-type(5n) {
+    float: none;
+}
+
+div.black {
+     background-color: black;
+ }
+
+div.blue {
+    background-color: blue;
+}
+
+div.green {
+    background-color: green;
+}
+
+div.red {
+    background-color: red;
+}

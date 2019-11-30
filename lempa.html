@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lempa On Off</title>
+</head>
+<body>
+
+<div >
+    <img src="/img/lempaon.png" alt="Lepute ijungta" onclick="lampOnOff()" id="lempa">
+</div>
+
+
+<script>
+    let onoff = false;
+    let lempa = document.getElementById('lempa');
+    function lampOnOff() {
+        if (onoff) {
+            lempa.src = "/img/lempaon.png";
+        } else {
+            lempa.src = "/img/lempaoff.png";
+        }
+        onoff = !onoff;
+    }
+</script>
+
+
+</body>
+</html>

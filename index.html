@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>kol kas nesamones</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/tab.css">
+</head>
+
+<body>
+
+<main>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(onclick, 'PirmasTab')" id="defaultOpen">Uzpildymo forma 1</button>
+        <button class="tablinks" onclick="openTab(onclick, 'AntrasTab')">Uzpildymo forma 2</button>
+        <button class="tablinks" onclick="openTab(onclick, 'TreciasTab')">Header</button>
+    </div>
+
+    <div id="PirmasTab" class="tabcontent">
+        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+        <h3>Pirmas</h3>
+        <br />
+        <form action="/action2.php">
+
+            <label for="name">Jusu vardas</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" id="name"/><br>
+
+            <label for="email">El. pastas</label>
+            <input type="text" name="email" id="email"/><br>
+
+            <label for="tema">Zinutes tema</label>
+            <input type="text" name="" id="tema"/><br>
+
+            <label for="tekstas">Iveskite zinute</label>
+            <textarea rows="4" cols="50" id="tekstas"></textarea><br>
+
+            <input type="submit" value="Siusti zinute"/>
+
+        </form>
+    </div>
+
+    <div id="AntrasTab" class="tabcontent">
+        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+        <h3>Antras</h3>
+        <br />
+        <form action="/action1.php">
+
+            <input type="text" name="name" placeholder="Jusu vardas"/><br>
+            <input type="text" name="email" placeholder="Jusu el. pasto adresas"/><br>
+            <input name="tema" placeholder="Zinutes tema" type="text"/><br>
+            <textarea rows="4" cols="50" placeholder="Iveskite Zinute"></textarea><br>
+            <input type="submit" value="Siusti zinute"/>
+
+        </form>
+    </div>
+
+    <div id="TreciasTab" class="tabcontent">
+        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+        <h3>Trecias</h3>
+        <br />
+        <footer>
+            Teises nesaugomos &copy;1099
+        </footer>
+    </div>
+
+</main>
+<br>
+
+<script src="js/tabs.js"></script>
+
+</body>
+</html>

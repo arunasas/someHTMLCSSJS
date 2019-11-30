@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<h2>Atsakymas</h2>
+<h2 id="demo"></h2>
+
+<p>Data:</p>
+<p id="data"></p>
+
+<p>Kampu kiekis:</p>
+<p id="n1"></p>
+<p>Kampai1:</p>
+<p id="kampai1"></p>
+
+<p>Kampu kiekis:</p>
+<p id="n2"></p>
+<p>Kampai2:</p>
+<p id="kampai2"></p>
+
+
+<script>
+    let bDate = "1983 - 02 - 29";
+    let datos = bDate.split(" -");
+    let sk1 = ((parseInt(datos[0]) % 1000) % 100 ) % 10;
+    let sk2 = parseInt(datos[1]) % 10;
+    let sk3 = parseInt(datos[2]) % 10;
+    document.getElementById('demo').innerHTML = sk1 + sk2 + sk3;
+    document.getElementById('data').innerHTML = bDate;
+
+    function daugKampu(n1, n2) {
+        return p1 * p2;
+    }
+    let n1 = 7;
+    let n2 = 8;
+    /**
+     * @return {number}
+     */
+    function Kampai(n) {
+        return (n - 2) * 180;   // The function returns the product of p1 and p2
+    }
+    document.getElementById('kampai1').innerHTML = Kampai(n1);
+    document.getElementById('n1').innerHTML = n1;
+
+    document.getElementById('kampai2').innerHTML = Kampai(n2);
+    document.getElementById('n2').innerHTML = n2;
+
+    a = 12;
+    b = 15;
+    c = 14;
+    d = 19;
+
+    function f(a, b, c, d) {
+
+        if (a <= c) {
+        return "Taip negalima, nes neatinka a<=c";
+    } if (b > d) {
+            return "Reziai x = {0}, y = {1}";
+        }
+        else {
+        return "Reziai x = {0}, y = {1}";
+    }
+    }
+
+</script>
+
+
+</body>
+</html>
