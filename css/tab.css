@@ -1,5 +1,5 @@
 body {
-
+background-color: #b3ff9b;
 }
 
 /* Style the tab */
@@ -40,7 +40,7 @@ border: none;
     display: none;
     padding: 6px 12px;
     border: 1px solid #cc2142;
-    border-top: none;
+    border: none;
 }
 
 /* Style the close button */

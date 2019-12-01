@@ -10,6 +10,7 @@ function openTab(evt, sheetnr) {
     }
     document.getElementById(sheetnr).style.display = "block";
     evt.currentTarget.className += " active";
+    document.getElementById("t4").contentWindow.location.reload();
 }
 
 // Get the element with id="defaultOpen" and click on it

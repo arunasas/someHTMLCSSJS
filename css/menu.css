@@ -10,12 +10,12 @@ header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    /*overflow: hidden;*/
+    overflow: hidden;
     background-color: #6b8942;
 }
 
-header li {
-    /*float: right;*/
+header {
+    position: center;
 }
 
 header li a {

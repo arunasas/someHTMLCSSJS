@@ -16,8 +16,18 @@ main {
 }
 
 footer {
+    box-sizing: border-box;
+    display: block;
+    bottom: 0;
+    width: 100%;
     background-color: #68a52a;
-    grid-area: f;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-padding: 10px, 0px, 10px, 0px;
 }
 
 #grid {

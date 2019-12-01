@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>kol kas nesamones</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <title>Some Tool</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/tab.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
+<header>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(onclick, 'Tab1')" id="defaultOpen">Some Tool</button>
+        <button class="tablinks" onclick="openTab(onclick, 'Tab2')">Some Tool as Backend (To Do List)</button>
+        <button class="tablinks" onclick="openTab(onclick, 'Tab3')">Snake Game (Copy-Paste)</button>
+        <button class="tablinks" onclick="openTab(onclick, 'Tab4')">Maze Generator (Copy-Paste)</button>
+        <button class="tablinks" onclick="openTab(onclick, 'Tab5')">Maze Game (Copy-Paste)</button>
+    </div>
+</header>
+
 
 <body>
 
-<main>
-    <div class="tab">
-        <button class="tablinks" onclick="openTab(onclick, 'PirmasTab')" id="defaultOpen">Uzpildymo forma 1</button>
-        <button class="tablinks" onclick="openTab(onclick, 'AntrasTab')">Uzpildymo forma 2</button>
-        <button class="tablinks" onclick="openTab(onclick, 'TreciasTab')">Header</button>
-    </div>
-
-    <div id="PirmasTab" class="tabcontent">
+    <div id="Tab1" class="tabcontent">
         <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
         <h3>Pirmas</h3>
         <br />
@@ -41,7 +46,7 @@
         </form>
     </div>
 
-    <div id="AntrasTab" class="tabcontent">
+    <div id="Tab2" class="tabcontent">
         <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
         <h3>Antras</h3>
         <br />
@@ -56,19 +61,38 @@
         </form>
     </div>
 
-    <div id="TreciasTab" class="tabcontent">
+    <div id="Tab3" class="tabcontent">
         <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-        <h3>Trecias</h3>
-        <br />
-        <footer>
-            Teises nesaugomos &copy;1099
-        </footer>
+        <div style="max-width:640px; max-height:640px; margin:0px auto; border:1px solid #000;">
+            <div style="position:relative; width:100%; padding-bottom:75%; height:0;">
+                <iframe style="position:absolute; top:0; left:0; width:100%; height:100%;"
+                        src="/snake/snake.html" scrolling="no" width="640" height="640" frameborder="0"></iframe>
+            </div>
+        </div>
     </div>
 
-</main>
-<br>
+    <div id="Tab4" class="tabcontent">
+        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+        <div style="max-width:640px; max-height:640px; margin:0px auto; border:1px solid #000;">
+            <div style="position:relative; width:100%; padding-bottom:75%; height:0;">
+                <iframe id="t4" style="position:absolute; top:0; left:0; width:100%; height:100%;"
+                        src="///home/au/someWEB/maze/maze.html" scrolling="no" width="640" height="640" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
 
-<script src="js/tabs.js"></script>
-
+    <div id="Tab5" class="tabcontent">
+        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+        <div style="max-width:640px; max-height:640px; margin:0px auto; border:1px solid #000;">
+            <div style="position:relative; width:100%; padding-bottom:75%; height:0;">
+                <iframe style="position:absolute; top:0; left:0; width:100%; height:100%;"
+                        src="///home/au/someWEB/maze-gen-game/maze.html" scrolling="no" width="640" height="640" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        AU &copy;2019
+    </footer>
+    <script src="js/tabs.js"></script>
 </body>
 </html>
