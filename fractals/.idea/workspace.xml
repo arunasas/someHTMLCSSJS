@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6c2a72f-4557-41d2-a5a6-b556ba48691d" name="Default Changelist" comment="" />
+    <list default="true" id="e6c2a72f-4557-41d2-a5a6-b556ba48691d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/fractals.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fractals.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fractals.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575187673461</updated>
-      <workItem from="1575187675961" duration="2194000" />
+      <workItem from="1575187675961" duration="2510000" />
     </task>
     <servers />
   </component>
