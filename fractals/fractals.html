@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rembound.com Example</title>
+    <script type="text/javascript" src="fractals.js"></script>
+    <script type="text/javascript">
+        function resize_canvas(){
+            let canvas = document.getElementById("viewport");
+            if (canvas.width  < window.innerWidth)
+            {
+                canvas.width  = window.innerWidth;
+            }
+
+            if (canvas.height < window.innerHeight)
+            {
+                canvas.height = window.innerHeight;
+            }
+        }
+    </script>
+
+    <script>
+    function resize() {
+
+    var canvas = document.getElementById('game');
+    var canvasRatio = canvas.height / canvas.width;
+    var windowRatio = window.innerHeight / window.innerWidth;
+    var width;
+    var height;
+
+    if (windowRatio < canvasRatio) {
+    height = window.innerHeight;
+    width = height / canvasRatio;
+    } else {
+    width = window.innerWidth;
+    height = width * canvasRatio;
+    }
+
+    canvas.style.width = width + 'px';
+    canvas.style.height = height + 'px';
+    };
+
+    window.addEventListener('resize', resize, false);
+</script>
+
+
+</head>
+
+<body onresize="resize_canvas()">
+<canvas id="viewport">Your browser doesn't support canvas</canvas>
+</body>
+
+</html>
