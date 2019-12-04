@@ -1,0 +1,131 @@
+/* Layout */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    max-height: 100%;
+    font-family: "Courier 10 Pitch";
+    line-height: 1.5em;
+}
+
+main {
+    position: fixed;
+    top: 50px; /* Set this to the height of the header */
+    bottom: 50px; /* Set this to the height of the footer */
+    left: 200px;
+    right: 200px;
+    overflow: auto;
+    background: #fff;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    overflow: hidden; /* Disables scrollbars on the header frame. To enable scrollbars, change "hidden" to "scroll" */
+    background: #BCCE98;
+}
+
+#footer {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    overflow: hidden; /* Disables scrollbars on the footer frame. To enable scrollbars, change "hidden" to "scroll" */
+    background: #BCCE98;
+}
+
+#left {
+    position: absolute;
+    z-index: -1;
+    top: 50px; /* Set this to the height of the header */
+    bottom: 50px; /* Set this to the height of the footer */
+    left: 0;
+    width: 200px;
+    overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
+    background: #DAE9BC;
+}
+
+#right {
+    position: absolute;
+    z-index: -1;
+    top: 50px; /* Set this to the height of the header */
+    bottom: 50px; /* Set this to the height of the footer */
+    right: 0;
+    width: 200px;
+    overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
+    background: #F7FDEB;
+}
+
+.innertube {
+    margin: 15px; /* Provides padding for the content */
+}
+
+p {
+    color: #555;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+/*IE6 fix*/
+* html body {
+    padding: 50px 200px 50px 200px; /* Set the first value to the height of the header, the second value to the width of the right column, third value to the height of the footer, and last value to the width of the left column */
+}
+
+* html main {
+    height: 100%;
+    width: 100%;
+}
+
+
+img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+img {
+    /*float: left;*/
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 2px;
+    width: 250px;
+}
+
+/*img:hover {*/
+/*    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);*/
+/*}*/
+
+/*nav {*/
+/*    z-index: -1;*/
+/*    position: fixed;*/
+/*}*/
