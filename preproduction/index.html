@@ -7,7 +7,7 @@
     <link href="img/favicon.ico" rel="icon" type="image/x-icon">
     <script src="js/randomtext.js"></script>
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/modal.css">
+    <link href="css/modal.css" rel="stylesheet">
 
 </head>
 
@@ -22,72 +22,147 @@
 <main>
     <div class="innertube">
 
+
         <div>
-        <h1 id="p1">Introduction Part</h1>
-        <p>
-            <a href="img/sometool-1.png" target="_parent">
-                <img alt="sometool-1" src="img/sometool-1.png">
-            </a>
-        <ul style="list-style-type:disc;">
-            <li>Written in JAVA</li>
-            <li>Able to scan through set IP range: user needs to enter First IP and Last IP from the same range</li>
-            <li>List all reachable (pingable) devices in the network</li>
-            <li>Has timeout parameter in ms. Very useful -- faster scanning speed. (For now only works with Linux)</li>
-        </ul>
-        </p>
-        </div>
-
-        <h1 id="p2">IPs Scan Part</h1>
-
-        <p>
-            <a href="img/sometool-3.png" target="_parent">
-                <img alt="sometool-3" src="img/sometool-3.png">
-            </a>
-        </p>
-
-        <h1 id="p3">SSH Command Part</h1>
-
-        <p>
-            <a href="img/sometool-4.png" target="_parent">
-                <img alt="sometool-4" class="img" src="img/sometool-4.png">
-            </a>
-        </p>
-
-        <p>
-            <a href="img/sometool-5.png" target="_parent">
-                <img alt="sometool-5" class="img" src="img/sometool-5.png">
-            </a>
-        </p>
-
-
-
-
-        <!-- Trigger the Modal -->
-        <img id="myImg" src="img/sometool-5.png" alt="sometool-5.png" style="width:100%;max-width:300px">
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-
-            <!-- The Close Button -->
-            <span class="close">&times;</span>
-
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img01">
-
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption"></div>
+            <h1 id="p1">Introduction</h1>
+            <div class="row">
+                <div class="column">
+                    <a href="img/sometool-1.png" target="_parent">
+                        <img alt="sometool-1" src="img/sometool-1.png">
+                    </a>
+                </div>
+                <div class="column">
+                    <ul style="list-style-type:disc;">
+                        <li>Lists all reachable (ping response) devices in the network</li>
+                        <li>Able to send sh command through SSH to any host selected in the list</li>
+                        <li>Mostly suitable in a large corporate LANs with tens or hundreds devices with same or similar
+                            configuration
+                        </li>
+<!--                        <li>An app created for a school project</li>-->
+                        <li>Mostly compiled from a code examples found on internets, like
+                            <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a>, and other sites
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
 
+        <div>
+            <h1 id="p2">IPs Scan</h1>
+
+            <div class="row">
+                <div class="column">
+                    <a href="img/sometool-2.png" target="_parent">
+                        <img alt="sometool-2" src="img/sometool-2.png">
+                    </a>
+                </div>
+                <div class="column">
+                    <ul style="list-style-type:disc;">
+                        <li>App is able to scan through set IP range: user needs to enter First IP and Last IP from the
+                            same
+                            range
+                        </li>
+                        <li>Example shows all reachable (pingable) devices scanned from 192.168.8.1 to *.8.100 on some
+                            LAN
+                        </li>
+                        <li>User selectable Timeout parameter in ms. Useful -- faster scanning speed.
+                            (Only works with Linux, for now, some privileges issue on windows)
+                        </li>
+                        <li>Uses a JAVA class <span style="font-style: oblique">isReachable()</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div></div>
 
 
+        <div>
+            <h1 id="p3">SSH Command</h1>
+
+            <div>
+                <div class="row">
+
+                    <div class="column">
+                        <a href="img/sometool-3.png" target="_parent">
+                            <img alt="sometool-3" class="img" src="img/sometool-3.png" style="width:100%">
+                        </a>
+                    </div>
+
+                    <div class="column">
+                        <a href="img/sometool-4.png" target="_parent">
+                            <img alt="sometool-4" class="img" src="img/sometool-4.png" style="width:100%">
+                        </a>
+                    </div>
+                </div>
+
+                <ul style="list-style-type:disc;">
+                    <li>Able to send sh command through SSH to any host selected in the list</li>
+                    <li>User need to enter user, pass, and command in appropriate fields</li>
+                    <li>If connection is successful answer is displayed in a text field</li>
+                    <li>To make a ssh connection app uses a <a href="http://www.jcraft.com/jsch/" target="_blank">JSch
+                        from
+                        JCraft</a> SSH library -- pure
+                        JAVA implementation of SSH2
+                    </li>
+                </ul>
+            </div>
+        </div>
 
 
-        <h1 id="p4">To Do List Part</h1>
+        <div>
+            <h1 id="p4">To Do List to improve an app</h1>
 
-        <p>
-            To Do List Part
-        </p>
+            <div class="row">
+                <div class="column">
+                    <!-- Trigger the Modal -->
+                    <img alt="sometool-5.png" id="myImg" src="img/sometool-5.png" style="width:100%;max-width:300px">
+
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img01">
+
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <ul style="list-style-type:disc;">
+
+                        <li>Add a field to enter SSH port number</li>
+                        <li>Implement method to send sh command to multiple hosts and result in a convenient form
+                            (sortable
+                            table)
+                        </li>
+                        <li>Answer is displayed in a text field</li>
+                        <li>Implement threading to increase scanning ant sh command execution speeds</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <h1 id="p5">IP address</h1>
+
+            <span style="font-style: oblique">From Wikipedia:</span>
+            <br/>
+            <br/>
+            An <a href="https://en.wikipedia.org/wiki/IP_address" target="_blank">Protocol address (IP address)</a>
+            is a numerical label assigned to each device connected to a computer network that uses the Internet
+            Protocol
+            for communication. An IP address serves two main functions: host or network interface identification and
+            location addressing. <...> IP addresses are written and displayed in human-readable notations, such as
+            172.16.254.1 in IPv4.
+
+        </div>
+
 
     </div>
 </main>
@@ -96,24 +171,25 @@
     <div class="innertube">
         <h3>Some Tool</h3>
         <ul>
-            <li><a href="#p1">Introduction Part</a></li>
-            <li><a href="#p2">IPs Scan Part</a></li>
-            <li><a href="#p3">SSH Command Part</a></li>
-            <li><a href="#p4">To Do List Part</a></li>
+            <li><a href="#p1">Introduction</a></li>
+            <li><a href="#p2">IPs Scan</a></li>
+            <li><a href="#p3">SSH Command</a></li>
+            <li><a href="#p4">To Do List</a></li>
         </ul>
-        <h3>Preparing Apache on Debian</h3>
+        <h3>Want to know more?</h3>
         <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
+            <li><a href="#p5">IP address ?</a></li>
+            <li><a href="https://duckduckgo.com/" target="_blank">Everything You want to know</a></li>
         </ul>
 
     </div>
 </nav>
+
 <div id="right">
     <div class="innertube">
-        <h4>Some deepness</h4>
+        <h4>Some links</h4>
         <p>
-            <script>generateText(2)</script>
+            Soon...
         </p>
     </div>
 </div>
