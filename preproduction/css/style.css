@@ -80,6 +80,10 @@ nav ul {
     padding: 0;
 }
 
+nav ul li {
+    padding-block: 5px;
+}
+
 nav ul a {
     color: darkgreen;
     text-decoration: none;
